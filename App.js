@@ -16,6 +16,7 @@ export default function App() {
   const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
+    setLoading(true);
     createTable(); // Initialize the table
 
     // Fetch data on app launch
